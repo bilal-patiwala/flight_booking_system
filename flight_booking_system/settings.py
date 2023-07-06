@@ -190,3 +190,4 @@ CORS_ORIGIN_WHITELIST = (
   'http://localhost:8000',
   "https://flight-booking-frontend-eight.vercel.app"
 )
+CORS_ALLOW_CREDENTIALS = True
