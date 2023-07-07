@@ -38,7 +38,7 @@ if you want to make admin you have to be a superuser or you can send a request f
 ```bash
 python manage.py createsuperuser
 ```
-Url : HTTP://127.0.0.1:8000/flight-admin-register/
+Url : HTTP://127.0.0.1:8000/flight-admin-register/ All the fields is required and password must be minimum of 6 characters
 ![image](https://github.com/bilal-patiwala/flight_booking_system/assets/95634055/4f100479-70a2-4187-9bcc-f29739942396)
 
 
