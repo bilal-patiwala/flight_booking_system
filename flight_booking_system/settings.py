@@ -29,7 +29,7 @@ SECRET_KEY = "django-insecure-fe819)mr2-0^3_9g!nlu98$wh@w%o0-otdaj%hy6hoi_0-g_te
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['.vercel.app','.now.sh','*']
 
 AUTH_USER_MODEL = 'flight_api.User'
 
