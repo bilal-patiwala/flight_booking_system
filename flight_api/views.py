@@ -55,8 +55,6 @@ def FlightUserLogin(request):
 def FlightAdminLogin(request):
         username = request.data.get('username')
         password = request.data.get('password')
-        print(username)
-        print(password)
         user = authenticate(username=username, password=password)
 
         if user is None:
@@ -210,7 +208,7 @@ def getFlightsForAdmin(request):
         serializer = GetBookedTicketsSerializer(ticket, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
     except:
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        return Response({"status":status.HTTP_400_BAD_REQUEST})
 
 @api_view(['GET'])
 @permission_classes([])
