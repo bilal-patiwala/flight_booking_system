@@ -2,6 +2,28 @@
 
 Flight booking web application for booking Flights for user and adding flights by admin.
 
+## User
+* User sign in/login
+* Book Flights
+* See all bookings
+* Search flights based on destination, date, time, origin
+
+## Admin
+* Login
+* Add/delete Flights
+* Check all the flights and corresponding bookings.
+
+## Tech Stack 
+
+### Frontend
+* Reactjs (for data rendering and state management)
+* TailwindCSS (for design)
+
+### Backend
+* django, djangorestframework
+* simple jwt for user authentication,
+* postgrsql/sqlite3 as database
+
 ## Installation
 
 Make sure you have Python Installed in your System.
