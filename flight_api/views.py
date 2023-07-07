@@ -164,9 +164,9 @@ def getFlights(request):
 
         flights = Flight.objects.all()
         if origin_country:
-            flights = flights.filter(origin_country__iexact=origin_country)
+            flights = flights.filter(origin_country__icontains=origin_country)
         if destination_country:
-            flights = flights.filter(destination_country__iexact=destination_country)
+            flights = flights.filter(destination_country__icontains=destination_country)
         if date:
             flights = flights.filter(departure_date=date)
         if time:

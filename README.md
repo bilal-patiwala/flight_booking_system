@@ -1,1 +1,59 @@
-# flight_booking_system
+# Fly-High - a flight booking System
+
+Flight booking web application for booking Flights for user and adding flights by admin.
+
+## Installation
+
+Make sure you have Python Installed in your System.
+
+Install Virtual Env
+
+```bash
+virtualenv env
+```
+After Installing env navigate to env and activate it.
+
+```bash
+env\scripts\activate
+```
+After activation navigate to flight-booking-system and install requirements.
+
+```bash
+cd flight-booking-system
+pip install -r requirements.txt
+```
+Now run these following commands
+
+```bash
+python manage.py makemigrations
+python manage.py migrate flight_api
+python manage.py migrate --run-syncdb
+python manage.py runserver
+```
+
+Now you are ready to go for making request from frontend
+
+if you want to make admin you have to be a superuser or you can send a request from postman to this URL
+
+```bash
+python manage.py createsuperuser
+```
+image for creating admin
+
+## Changing Database
+
+1) create .env File in your root directory
+
+```bash
+DB_NAME= 'postgres'
+DB_USER= 'postgres'
+DB_PASSWORD= 'your Password'
+DB_HOST= 'Host Address'
+DB_PORT= '5432'
+```
+2) add .env file into your .gitignore file
+3) Run Makemigrations and migrate commands again
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
