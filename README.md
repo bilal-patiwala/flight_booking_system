@@ -18,6 +18,7 @@ Flight booking web application for booking Flights for user and adding flights b
 ### Frontend
 * Reactjs (for data rendering and state management)
 * TailwindCSS (for design)
+* Frontend Repository: https://github.com/bilal-patiwala/flight_booking_frontend
 
 ### Backend
 * django, djangorestframework
