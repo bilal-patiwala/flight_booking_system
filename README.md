@@ -77,7 +77,7 @@ DB_HOST= 'Host Address'
 DB_PORT= '5432'
 ```
 2) add .env file into your .gitignore file
-3) Run Makemigrations and migrate commands again
+3) Run Makemigrations and Migrate commands again
 
 ## License
 
